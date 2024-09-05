@@ -1,0 +1,12 @@
+name=oracle-jdbc-source-connector
+connector.class=io.confluent.connect.jdbc.JdbcSourceConnector
+tasks.max=1
+connection.url=jdbc:oracle:thin:@//172.30.1.22:1521/devops
+connection.user=dapoli
+connection.password=super
+table.whitelist=DAPOLI.EMPLOYEE
+mode=incrementing
+incrementing.column.name=EMPLOYEE_ID
+topic.prefix=dapoli
+poll.interval.ms=5000
+
