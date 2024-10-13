@@ -14,7 +14,7 @@ auto.evolve=true
 insert.mode=insert
 table.name.format=DAPOLIMIS.EMPLOYEE
 
-# How data is written to the database
+# How data is written to the database changes
 pk.mode=none
 value.converter=org.apache.kafka.connect.json.JsonConverter
 value.converter.schemas.enable=true
